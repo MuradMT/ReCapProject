@@ -16,9 +16,28 @@ namespace Business.Concrete
         {
             _cardal = cardal;
         }
-        public List<Car> Back()
+
+        public void Add(Car car)
+        {
+            if (car.Name.Length >1&&car.DailyPrice>0)
+            {
+                _cardal.Add(car);
+            }
+        }
+
+        public List<Car> GetAll()
         {
             return _cardal.GetAll();
+        }
+
+        public List<Car> GetCarsByBrandId(int id)
+        {
+            return _cardal.GetAll(p=>p.BrandId==id);
+        }
+
+        public List<Car> GetCarsByColorId(int id)
+        {
+            return _cardal.GetAll(p => p.ColorId == id);
         }
     }
 }

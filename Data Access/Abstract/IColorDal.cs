@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace Data_Access.Abstract
 {
-    public interface ICarDal:IEntityRepository<Car>
+    public interface IColorDal:IEntityRepository<Color>
     {
-        
     }
 }

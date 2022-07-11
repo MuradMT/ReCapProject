@@ -1,0 +1,16 @@
+create table Brands(
+Id int primary key,
+Name nvarchar(200) unique 
+)
+create table Colors(
+Id int primary key,
+Name nvarchar(200) unique 
+)
+create table Cars(
+Id int primary Key,
+BrandId int foreign key references Brands(Id),
+ColorId int foreign key references Colors(Id),
+ModelYear datetime2 ,
+DailyPrice decimal(12,2),
+Description nvarchar(200)
+)
