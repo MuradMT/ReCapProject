@@ -1,0 +1,22 @@
+C:\Users\mamma\source\ReCapProject\ConsoleUI\bin\Debug\net6.0\ConsoleUI.exe
+C:\Users\mamma\source\ReCapProject\ConsoleUI\bin\Debug\net6.0\ConsoleUI.deps.json
+C:\Users\mamma\source\ReCapProject\ConsoleUI\bin\Debug\net6.0\ConsoleUI.runtimeconfig.json
+C:\Users\mamma\source\ReCapProject\ConsoleUI\bin\Debug\net6.0\ConsoleUI.dll
+C:\Users\mamma\source\ReCapProject\ConsoleUI\bin\Debug\net6.0\ConsoleUI.pdb
+C:\Users\mamma\source\ReCapProject\ConsoleUI\bin\Debug\net6.0\Business.dll
+C:\Users\mamma\source\ReCapProject\ConsoleUI\bin\Debug\net6.0\Data Access.dll
+C:\Users\mamma\source\ReCapProject\ConsoleUI\bin\Debug\net6.0\Entities.dll
+C:\Users\mamma\source\ReCapProject\ConsoleUI\bin\Debug\net6.0\Business.pdb
+C:\Users\mamma\source\ReCapProject\ConsoleUI\bin\Debug\net6.0\Data Access.pdb
+C:\Users\mamma\source\ReCapProject\ConsoleUI\bin\Debug\net6.0\Entities.pdb
+C:\Users\mamma\source\ReCapProject\ConsoleUI\obj\Debug\net6.0\ConsoleUI.csproj.AssemblyReference.cache
+C:\Users\mamma\source\ReCapProject\ConsoleUI\obj\Debug\net6.0\ConsoleUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mamma\source\ReCapProject\ConsoleUI\obj\Debug\net6.0\ConsoleUI.AssemblyInfoInputs.cache
+C:\Users\mamma\source\ReCapProject\ConsoleUI\obj\Debug\net6.0\ConsoleUI.AssemblyInfo.cs
+C:\Users\mamma\source\ReCapProject\ConsoleUI\obj\Debug\net6.0\ConsoleUI.csproj.CoreCompileInputs.cache
+C:\Users\mamma\source\ReCapProject\ConsoleUI\obj\Debug\net6.0\ConsoleUI.csproj.CopyComplete
+C:\Users\mamma\source\ReCapProject\ConsoleUI\obj\Debug\net6.0\ConsoleUI.dll
+C:\Users\mamma\source\ReCapProject\ConsoleUI\obj\Debug\net6.0\refint\ConsoleUI.dll
+C:\Users\mamma\source\ReCapProject\ConsoleUI\obj\Debug\net6.0\ConsoleUI.pdb
+C:\Users\mamma\source\ReCapProject\ConsoleUI\obj\Debug\net6.0\ConsoleUI.genruntimeconfig.cache
+C:\Users\mamma\source\ReCapProject\ConsoleUI\obj\Debug\net6.0\ref\ConsoleUI.dll
