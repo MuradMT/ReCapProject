@@ -19,7 +19,7 @@ namespace Business.Concrete
 
         public void Add(Car car)
         {
-            if (car.Name.Length >1&&car.DailyPrice>0)
+            if (car.Description.Length >1&&car.DailyPrice>0)
             {
                 _cardal.Add(car);
             }
