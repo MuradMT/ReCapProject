@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data_Access.Abstract
+namespace Core.Data_Access
 {
     public interface IEntityRepository<T>
     {
