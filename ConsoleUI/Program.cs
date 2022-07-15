@@ -9,7 +9,7 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            //CarTest();
+            CarTest();
             //CarDtoTest();
         }
 
@@ -17,7 +17,7 @@ namespace ConsoleUI
         {
             CarManager manager = new CarManager(new EfCarDal());
             Console.WriteLine("Total Cars:" + manager.Len);
-            foreach (var item in manager.GetCarDetails())
+            foreach (var item in manager.GetCarDetails().Data)
             {
                 Console.WriteLine(item.CarName + "/" + item.ColorName + "/" + item.BrandName);
             }
@@ -26,18 +26,15 @@ namespace ConsoleUI
         private static void CarTest()
         {
             CarManager manager = new CarManager(new EfCarDal());
-            manager.Add(new Car
+            if (manager.GetAll().Success)
             {
-                Id = 1,
-                ColorId = 1,
-                DailyPrice = 120,
-                Description = "Lambo",
-                BrandId = 1,
-                ModelYear = new DateTime(1995, 12, 4)
-            });
-            foreach (var item in manager.GetAll())
+
+                Console.WriteLine(manager.GetById(5).Data.Description);
+                Console.WriteLine(manager.GetById(5).Message);
+            }
+            else
             {
-                Console.WriteLine(item.Description);
+                Console.WriteLine(manager.GetAll().Message);
             }
         }
     }
