@@ -15,11 +15,10 @@ namespace ConsoleUI
            
             Console.WriteLine(rentalManager.Add(new Rental()
             {
-                Id = 3,
-                CarId = 2,
+                Id = 7,
+                CarId = 3,
                 CustomerId = 1,
-                RentDate = DateTime.Now,
-                ReturnDate = new DateTime(2022, 12, 16)
+                RentDate = DateTime.Now
             }).Message);
             
         }

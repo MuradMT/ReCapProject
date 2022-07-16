@@ -36,7 +36,8 @@ namespace Business.Concrete
                 {
                     if (rental.CarId == item.CarId)
                     {
-                        if (DateTime.Compare(item.ReturnDate,DateTime.Now)>0)
+                        if (DateTime.Compare(
+                            Convert.ToDateTime(item.ReturnDate??item.RentDate),DateTime.Now)>0)
                         {
                             carStillRent=true;
                         }
