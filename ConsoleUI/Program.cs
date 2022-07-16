@@ -11,8 +11,14 @@ namespace ConsoleUI
         {
             //CarTest();
             //CarDtoTest();
+            //RentalTest();
+
+        }
+
+        private static void RentalTest()
+        {
             RentalManager rentalManager = new RentalManager(new EfRentalDal());
-           
+
             Console.WriteLine(rentalManager.Add(new Rental()
             {
                 Id = 7,
@@ -20,7 +26,6 @@ namespace ConsoleUI
                 CustomerId = 1,
                 RentDate = DateTime.Now
             }).Message);
-            
         }
 
         private static void CarDtoTest()
