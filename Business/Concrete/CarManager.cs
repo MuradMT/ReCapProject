@@ -28,12 +28,12 @@ namespace Business.Concrete
                
 
             }
-            return new SuccessResult(Messages.Added="Car");
+            return new SuccessResult(Messages.CarAdded);
         }
 
         public IDataResult<List<CarDetailDto>> GetCarDetails()
         {
-            return new SuccessDataResult<List<CarDetailDto>>(_cardal.GetCarDetails(),Messages.Get="Car Details");
+            return new SuccessDataResult<List<CarDetailDto>>(_cardal.GetCarDetails());
         }
         public int Len {
             get
@@ -44,36 +44,33 @@ namespace Business.Concrete
         public IResult Delete(Car car)
         {
            _cardal.Delete(car);
-            return new SuccessResult(Messages.Deleted = "Car");
+            return new SuccessResult(Messages.CarDeleted);
         }
 
         public IDataResult<List<Car>> GetAll()
         {
-            return new SuccessDataResult<List<Car>>(_cardal.GetAll(),Messages.Get="Cars");
+            return new SuccessDataResult<List<Car>>(_cardal.GetAll());
         }
 
         public IDataResult<Car> GetById(int id)
         {
-            return new SuccessDataResult<Car>(_cardal.Get(p => p.Id == id),
-                Messages.Get="Car matching by Id");
+            return new SuccessDataResult<Car>(_cardal.Get(p => p.Id == id));
         }
 
         public IDataResult<List<Car>> GetCarsByBrandId(int id)
         {
-            return new SuccessDataResult<List<Car>>(_cardal.GetAll(p=>p.BrandId==id),
-                Messages.Get = "Cars matching by BrandId");
+            return new SuccessDataResult<List<Car>>(_cardal.GetAll(p=>p.BrandId==id));
         }
 
         public IDataResult<List<Car>> GetCarsByColorId(int id)
         {
-            return new SuccessDataResult<List<Car>>(_cardal.GetAll(p => p.ColorId == id),
-                Messages.Get = "Cars matching by ColorId");
+            return new SuccessDataResult<List<Car>>(_cardal.GetAll(p => p.ColorId == id));
         }
 
         public IResult Update(Car car)
         {
             _cardal.Update(car);
-            return new SuccessResult(Messages.Updated="Car");
+            return new SuccessResult(Messages.CarUpdated);
         }
     }
 }

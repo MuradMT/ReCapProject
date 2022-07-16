@@ -9,8 +9,19 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            CarTest();
+            //CarTest();
             //CarDtoTest();
+            RentalManager rentalManager = new RentalManager(new EfRentalDal());
+           
+            Console.WriteLine(rentalManager.Add(new Rental()
+            {
+                Id = 3,
+                CarId = 2,
+                CustomerId = 1,
+                RentDate = DateTime.Now,
+                ReturnDate = new DateTime(2022, 12, 16)
+            }).Message);
+            
         }
 
         private static void CarDtoTest()
